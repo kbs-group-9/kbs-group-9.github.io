@@ -25,9 +25,14 @@ Specific questions like the Total number of accidents per city or state can be c
 
 **Kaggle Dataset Link:** https://www.kaggle.com/sobhanmoosavi/us-accidents
 
-- preprocessing that may be necessary (careful here)
-- size of data - data must be “big” data (millions of records)
-- tentative plan for analysis on GCP
+- Preprocessing:
+  - Check for Missing values and replace them using Mean or Median of data
+  - Work on feature selection among given features and generate new features using grouping and aggregation techniques
+  - Prepare dataset features to be compatible with different types of visualization
+  
+- Size of Dataset - 3 Million records with 49 feature columns
+
+- Tentative plan for analysis on GCP
   - EDA and Preprocessing
   - Dashboard for User group, Dashboard for Data Engineers
   - GCP further processing - ML

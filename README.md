@@ -33,11 +33,11 @@ Specific questions like the Total number of accidents per city or state can be c
 - Size of Dataset - 3 Million records with 49 feature columns
 
 - Tentative plan for analysis on GCP
-  - EDA and Preprocessing
-  - Dashboard for User group, Dashboard for Data Engineers
-  - GCP further processing - ML
-  - Evaluation of results
-  - Steps for production model
-  - Final Dashboard for User Group
+  - EDA and Preprocessing - 03-23-2020
+  - Dashboard for User group, Dashboard for Data Engineers - 03-26-2020
+  - GCP further processing - ML -03-29-2020
+  - Evaluation of results - 04-01-2020
+  - Steps for production model -04-07-2020
+  - Final Dashboard for User Group -04-15-2020
 
 (note:  analysis must use Hadoop, Big Query, PySpark, as many tools as possible from class)

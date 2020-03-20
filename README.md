@@ -1,4 +1,4 @@
-# KBS Group 6 - Project
+# KBS Group 9 - Project
 
 ## Team Members:
 - Aditya Kamble (akamble@uncc.edu)

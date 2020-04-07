@@ -38,14 +38,19 @@ Specific questions like the Total number of accidents per city or state can be c
 - Size of Dataset - 3 Million records with 49 feature columns
 
 ### Tentative plan for analysis on GCP
-  - EDA and Preprocessing - 03-23-2020
-  - Dashboard for User group, Dashboard for Data Engineers - 03-26-2020
+  - EDA and Preprocessing - Completed
+  - Dashboard for User group, Dashboard for Data Engineers - Completed
   - GCP further processing - ML -03-29-2020
-  - Evaluation of results - 04-01-2020
-  - Steps for production model - 04-07-2020
-  - Final Dashboard for User Group - 04-15-2020
-
+  - Evaluation of results - 04-10-2020
+  - Steps for production model - 04-15-2020
+  - Final Dashboard for User Group - 04-20-2020
+  
+### Detailed plan for data ingest, ML, Evaluation of Results and Presentation of Results, Production Model
 (note:  analysis must use Hadoop, Big Query, PySpark, as many tools as possible from class)
+
+  - Data Ingesion completed - Used SQL instance to extract data to Data Studio for creation of dashboard
+  - We will be building ML Models to predict Accident Severity based on weather, wind, time, etc
+  - ML models to classify the accidents based on certain parameters using PySpark and ML-Lib
 
 ### Research citations:
   - https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/811059

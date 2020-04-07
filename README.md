@@ -22,6 +22,7 @@ This is a countrywide traffic accident dataset, which covers 49 states of the Un
 
 Since the dataset contains 3.0 million records, It’s difficult for a user to bring out the useful insights.
 Specific questions like the Total number of accidents per city or state can be calculated using statistics, but more details related to the individual factors affecting the result can be sought by visualization.  Having a multiple columns helps in finding the relation between several factors responsible for the accidents can be explored and explained through visualization.
+![image](US_Accidents_Report-UserDashboard.JPG)
 
 **Kaggle Dataset Link:** https://www.kaggle.com/sobhanmoosavi/us-accidents
 

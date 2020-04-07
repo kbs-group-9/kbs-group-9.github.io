@@ -5,7 +5,7 @@
 - Sidharth Panda (spanda3@uncc.edu)
 
 
-### 1. Research Questions
+### Research Questions
   - What is the number of accidents of a state as compared to its adjacent states?
   - Why and how wind speed and wind direction contribute to accidents?
   - How does Weather condition and time affect visibility which results in the number of accidents?
@@ -13,7 +13,7 @@
   - Is the accident rates in different states higher due to different Weather Condition?
   
 
-### 2. Domain and Data: Identify domain and source(s) of data
+### Domain and Data: Identify domain and source(s) of data
 #### Dataset - US Accidents (3 Million Records)
 
 **A Countrywide Traffic Accident Dataset (2016 - 2019)**
@@ -33,11 +33,11 @@ Specific questions like the Total number of accidents per city or state can be c
   - Work on feature selection among given features and generate new features using grouping and aggregation techniques
   - Prepare dataset features to be compatible with different types of visualization
 
-### [Link to the notebook](https://github.com/kbs-group-9/kbs-group-9.github.io/blob/master/notebooks/US%20Accidents%20-%20EDA.ipynb)
+#### [Link to the notebook](https://github.com/kbs-group-9/kbs-group-9.github.io/blob/master/notebooks/US%20Accidents%20-%20EDA.ipynb)
 
 - Size of Dataset - 3 Million records with 49 feature columns
 
-- Tentative plan for analysis on GCP
+### Tentative plan for analysis on GCP
   - EDA and Preprocessing - 03-23-2020
   - Dashboard for User group, Dashboard for Data Engineers - 03-26-2020
   - GCP further processing - ML -03-29-2020
@@ -47,5 +47,5 @@ Specific questions like the Total number of accidents per city or state can be c
 
 (note:  analysis must use Hadoop, Big Query, PySpark, as many tools as possible from class)
 
-- Research citations:  (three scholarly papers that assist with your project in terms of domain, processing, preparing data, etc.) – provide citations and one paragraph abstract
+### Research citations:  (three scholarly papers that assist with your project in terms of domain, processing, preparing data, etc.) – provide citations and one paragraph abstract
   - https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/811059

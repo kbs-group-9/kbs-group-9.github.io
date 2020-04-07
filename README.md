@@ -11,7 +11,10 @@
   - How does Weather condition and time affect visibility which results in the number of accidents?
   - Do accidents happen due to stop signs w.r.t time of the day?
   - Is the accident rates in different states higher due to different Weather Condition?
-  
+
+### Audience 
+  - Regular vehicle users
+  - Autonomous Vehicle manufactures like Tesla, Hyundai etc.  
 
 ### Domain and Data: Identify domain and source(s) of data
 #### Dataset - US Accidents (3 Million Records)

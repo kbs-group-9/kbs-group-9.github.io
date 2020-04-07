@@ -41,3 +41,6 @@ Specific questions like the Total number of accidents per city or state can be c
   - Final Dashboard for User Group - 04-15-2020
 
 (note:  analysis must use Hadoop, Big Query, PySpark, as many tools as possible from class)
+
+- Research citations:  (three scholarly papers that assist with your project in terms of domain, processing, preparing data, etc.) – provide citations and one paragraph abstract
+  - https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/811059

@@ -36,6 +36,8 @@ Specific questions like the Total number of accidents per city or state can be c
   - Work on feature selection among given features and generate new features using grouping and aggregation techniques
   - Prepare dataset features to be compatible with different types of visualization
 
+#### [Evaluating Machine Learning Projects Forty Three Rules of Machine Learning](https://github.com/kbs-group-9/kbs-group-9.github.io/blob/master/Evaluating%20Machine%20Learning%20Projects_%20Forty%20Three%20Rules%20of%20Machine%20Learning.pdf)
+
 #### [Link to the notebook](https://github.com/kbs-group-9/kbs-group-9.github.io/blob/master/notebooks/US%20Accidents%20-%20EDA.ipynb)
 
 - Size of Dataset - 3 Million records with 49 feature columns

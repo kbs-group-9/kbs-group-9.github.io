@@ -41,19 +41,12 @@ Specific questions like the Total number of accidents per city or state can be c
 #### [Link to the notebook](https://github.com/kbs-group-9/kbs-group-9.github.io/blob/master/notebooks/US%20Accidents%20-%20EDA.ipynb)
 
 - Size of Dataset - 3 Million records with 49 feature columns
-
-### Tentative plan for analysis on GCP
-  - EDA and Preprocessing - Completed
-  - Dashboard for User group, Dashboard for Data Engineers - Completed
-  - GCP further processing - ML -03-29-2020
-  - Evaluation of results - 04-10-2020
-  - Steps for production model - 04-15-2020
-  - Final Dashboard for User Group - 04-20-2020
   
 ### Detailed plan for data ingest, ML, Evaluation of Results and Presentation of Results, Production Model
 (note:  analysis must use Hadoop, Big Query, PySpark, as many tools as possible from class)
 
   - Data Ingesion completed - Used SQL instance to extract data to Data Studio for creation of dashboard
+  - Using BigQuery to fetch data into AI Notebook for EDA
   - We will be building ML Models to predict Accident Severity based on weather, wind, time, etc
   - ML models to classify the accidents based on certain parameters using PySpark and ML-Lib
 

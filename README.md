@@ -1,4 +1,4 @@
-# KBS Group 9 - Project
+# Route Recommendation to reduce Accidents using Predictive Analysis
 
 ## Team Members:
 - Aditya Kamble (akamble@uncc.edu)
@@ -11,7 +11,10 @@
   - How does Weather condition and time affect visibility which results in the number of accidents?
   - Do accidents happen due to stop signs w.r.t time of the day?
   - Is the accident rates in different states higher due to different Weather Condition?
-  
+
+### Audience 
+  - Regular vehicle users
+  - Autonomous Vehicle manufactures like Tesla, Hyundai etc.  
 
 ### Domain and Data: Identify domain and source(s) of data
 #### Dataset - US Accidents (3 Million Records)
@@ -33,19 +36,26 @@ Specific questions like the Total number of accidents per city or state can be c
   - Work on feature selection among given features and generate new features using grouping and aggregation techniques
   - Prepare dataset features to be compatible with different types of visualization
 
+#### [Evaluating Machine Learning Projects Forty Three Rules of Machine Learning](https://github.com/kbs-group-9/kbs-group-9.github.io/blob/master/Evaluating%20Machine%20Learning%20Projects_%20Forty%20Three%20Rules%20of%20Machine%20Learning.pdf)
+
 #### [Link to the notebook](https://github.com/kbs-group-9/kbs-group-9.github.io/blob/master/notebooks/US%20Accidents%20-%20EDA.ipynb)
 
 - Size of Dataset - 3 Million records with 49 feature columns
 
 ### Tentative plan for analysis on GCP
-  - EDA and Preprocessing - 03-23-2020
-  - Dashboard for User group, Dashboard for Data Engineers - 03-26-2020
+  - EDA and Preprocessing - Completed
+  - Dashboard for User group, Dashboard for Data Engineers - Completed
   - GCP further processing - ML -03-29-2020
-  - Evaluation of results - 04-01-2020
-  - Steps for production model - 04-07-2020
-  - Final Dashboard for User Group - 04-15-2020
-
+  - Evaluation of results - 04-10-2020
+  - Steps for production model - 04-15-2020
+  - Final Dashboard for User Group - 04-20-2020
+  
+### Detailed plan for data ingest, ML, Evaluation of Results and Presentation of Results, Production Model
 (note:  analysis must use Hadoop, Big Query, PySpark, as many tools as possible from class)
+
+  - Data Ingesion completed - Used SQL instance to extract data to Data Studio for creation of dashboard
+  - We will be building ML Models to predict Accident Severity based on weather, wind, time, etc
+  - ML models to classify the accidents based on certain parameters using PySpark and ML-Lib
 
 ### Research citations:
   - https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/811059

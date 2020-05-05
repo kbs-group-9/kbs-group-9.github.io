@@ -1,0 +1,128 @@
+jupyter@intel-20200220-090909:~$ gcloud auth application-default login
+
+You are running on a Google Compute Engine virtual machine.
+The service credentials associated with this virtual machine
+will automatically be used by Application Default
+Credentials, so it is not necessary to use this command.
+
+If you decide to proceed anyway, your user credentials may be visible
+to others with access to this virtual machine. Are you sure you want
+to authenticate with your personal account?
+
+Do you want to continue (Y/n)?  Y
+
+Go to the following link in your browser:
+
+    https://accounts.google.com/o/oauth2/auth?code_challenge=Z-w5jBnVP2z3M1UHw5AuERfq-N2zqbcBGHDOE0xftII&prompt=select_account&code_challenge_method=S256&access_type=offline&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&client_id=764086051850-6qr4p6gpi6hn506pt8ejuq83di341hur.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth
+
+
+Enter verification code: 4/zQEAANxJEDQE_RWHoyMJYQjm8RTsB9qot9wIAILvkwqii8YMhAaAKzc
+
+Credentials saved to file: [/home/jupyter/.config/gcloud/application_default_credentials.json]
+
+These credentials will be used by any library that requests Application Default Credentials (ADC).
+
+Quota project 'kbs-2020' was added to ADC which can be used by Google client libraries for billing and quota. To just update the quota project in ADC, run $gcloud auth application-default set-quota-project.
+
+
+To take a quick anonymous survey, run:
+  $ gcloud survey
+
+jupyter@intel-20200220-090909:~$ ls ~/.config/gcloud/
+active_config  application_default_credentials.json  config_sentinel  configurations  gce  logs
+jupyter@intel-20200220-090909:~$ pip install google-cloud-bigquery
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: google-cloud-bigquery in /usr/local/lib/python3.5/dist-packages (1.23.1)
+Requirement already satisfied: google-cloud-core<2.0dev,>=1.0.3 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery) (1.2.0)
+Requirement already satisfied: protobuf>=3.6.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery) (3.11.2)
+Requirement already satisfied: six<2.0.0dev,>=1.13.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery) (1.14.0)
+Requirement already satisfied: google-resumable-media!=0.4.0,<0.6.0dev,>=0.3.1 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery) (0.5.0)
+Requirement already satisfied: google-api-core<2.0.0dev,>=1.16.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (1.16.0)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.5/dist-packages (from protobuf>=3.6.0->google-cloud-bigquery) (45.1.0)
+Requirement already satisfied: requests<3.0.0dev,>=2.18.0 in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (2.22.0)
+Requirement already satisfied: googleapis-common-protos<2.0dev,>=1.6.0 in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (1.51.0)
+Requirement already satisfied: pytz in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (2019.3)
+Requirement already satisfied: google-auth<2.0dev,>=0.4.0 in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (1.11.0)
+Requirement already satisfied: idna<2.9,>=2.5 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (2.8)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (1.24.2)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (2019.11.28)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.5/dist-packages (from google-auth<2.0dev,>=0.4.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (0.2.8)
+Requirement already satisfied: cachetools<5.0,>=2.0.0 in /usr/local/lib/python3.5/dist-packages (from google-auth<2.0dev,>=0.4.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (4.0.0)
+Requirement already satisfied: rsa<4.1,>=3.1.4 in /usr/local/lib/python3.5/dist-packages (from google-auth<2.0dev,>=0.4.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (4.0)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /usr/local/lib/python3.5/dist-packages (from pyasn1-modules>=0.2.1->google-auth<2.0dev,>=0.4.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (0.4.8)
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+jupyter@intel-20200220-090909:~$ pip3 install google-cloud-bigquery
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: google-cloud-bigquery in /usr/local/lib/python3.5/dist-packages (1.23.1)
+Requirement already satisfied: google-cloud-core<2.0dev,>=1.0.3 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery) (1.2.0)
+Requirement already satisfied: google-resumable-media!=0.4.0,<0.6.0dev,>=0.3.1 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery) (0.5.0)
+Requirement already satisfied: protobuf>=3.6.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery) (3.11.2)
+Requirement already satisfied: six<2.0.0dev,>=1.13.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery) (1.14.0)
+Requirement already satisfied: google-api-core<2.0.0dev,>=1.16.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (1.16.0)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.5/dist-packages (from protobuf>=3.6.0->google-cloud-bigquery) (45.1.0)
+Requirement already satisfied: googleapis-common-protos<2.0dev,>=1.6.0 in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (1.51.0)
+Requirement already satisfied: pytz in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (2019.3)
+Requirement already satisfied: requests<3.0.0dev,>=2.18.0 in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (2.22.0)
+Requirement already satisfied: google-auth<2.0dev,>=0.4.0 in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (1.11.0)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (1.24.2)
+Requirement already satisfied: idna<2.9,>=2.5 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (2.8)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (2019.11.28)
+Requirement already satisfied: rsa<4.1,>=3.1.4 in /usr/local/lib/python3.5/dist-packages (from google-auth<2.0dev,>=0.4.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (4.0)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.5/dist-packages (from google-auth<2.0dev,>=0.4.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (0.2.8)
+Requirement already satisfied: cachetools<5.0,>=2.0.0 in /usr/local/lib/python3.5/dist-packages (from google-auth<2.0dev,>=0.4.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (4.0.0)
+Requirement already satisfied: pyasn1>=0.1.3 in /usr/local/lib/python3.5/dist-packages (from rsa<4.1,>=3.1.4->google-auth<2.0dev,>=0.4.0->google-api-core<2.0.0dev,>=1.16.0->google-cloud-core<2.0dev,>=1.0.3->google-cloud-bigquery) (0.4.8)
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
+jupyter@intel-20200220-090909:~$ /usr/bin/python3 -m pip install --upgrade pip
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pip
+  Downloading pip-20.1-py2.py3-none-any.whl (1.5 MB)
+     |████████████████████████████████| 1.5 MB 4.7 MB/s 
+Installing collected packages: pip
+  WARNING: The scripts pip, pip3 and pip3.5 are installed in '/home/jupyter/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed pip-20.1
+jupyter@intel-20200220-090909:~$ export $PATH=/home/jupyter/.local/bin
+bash: export: `/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games=/home/jupyter/.local/bin': not a valid identifier
+jupyter@intel-20200220-090909:~$ export $PATH=/home/jupyter/.local/bin
+bash: export: `/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games=/home/jupyter/.local/bin': not a valid identifier
+jupyter@intel-20200220-090909:~$ pip install --upgrade google-cloud-bigquery[pandas]
+Defaulting to user installation because normal site-packages is not writeable
+Collecting google-cloud-bigquery[pandas]
+  Downloading google_cloud_bigquery-1.24.0-py2.py3-none-any.whl (165 kB)
+     |████████████████████████████████| 165 kB 5.0 MB/s 
+Requirement already satisfied, skipping upgrade: google-resumable-media<0.6dev,>=0.5.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery[pandas]) (0.5.0)
+Requirement already satisfied, skipping upgrade: google-api-core<2.0dev,>=1.15.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery[pandas]) (1.16.0)
+Requirement already satisfied, skipping upgrade: google-cloud-core<2.0dev,>=1.1.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery[pandas]) (1.2.0)
+Requirement already satisfied, skipping upgrade: protobuf>=3.6.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery[pandas]) (3.11.2)
+Requirement already satisfied, skipping upgrade: google-auth<2.0dev,>=1.9.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery[pandas]) (1.11.0)
+Requirement already satisfied, skipping upgrade: six<2.0.0dev,>=1.13.0 in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery[pandas]) (1.14.0)
+Requirement already satisfied, skipping upgrade: pandas>=0.17.1; extra == "pandas" in /usr/local/lib/python3.5/dist-packages (from google-cloud-bigquery[pandas]) (0.25.3)
+Requirement already satisfied, skipping upgrade: requests<3.0.0dev,>=2.18.0 in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0dev,>=1.15.0->google-cloud-bigquery[pandas]) (2.22.0)
+Requirement already satisfied, skipping upgrade: setuptools>=34.0.0 in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0dev,>=1.15.0->google-cloud-bigquery[pandas]) (45.1.0)
+Requirement already satisfied, skipping upgrade: pytz in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0dev,>=1.15.0->google-cloud-bigquery[pandas]) (2019.3)
+Requirement already satisfied, skipping upgrade: googleapis-common-protos<2.0dev,>=1.6.0 in /usr/local/lib/python3.5/dist-packages (from google-api-core<2.0dev,>=1.15.0->google-cloud-bigquery[pandas]) (1.51.0)
+Requirement already satisfied, skipping upgrade: rsa<4.1,>=3.1.4 in /usr/local/lib/python3.5/dist-packages (from google-auth<2.0dev,>=1.9.0->google-cloud-bigquery[pandas]) (4.0)
+Requirement already satisfied, skipping upgrade: cachetools<5.0,>=2.0.0 in /usr/local/lib/python3.5/dist-packages (from google-auth<2.0dev,>=1.9.0->google-cloud-bigquery[pandas]) (4.0.0)
+Requirement already satisfied, skipping upgrade: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.5/dist-packages (from google-auth<2.0dev,>=1.9.0->google-cloud-bigquery[pandas]) (0.2.8)
+Requirement already satisfied, skipping upgrade: python-dateutil>=2.6.1 in /usr/local/lib/python3.5/dist-packages (from pandas>=0.17.1; extra == "pandas"->google-cloud-bigquery[pandas]) (2.8.1)
+Requirement already satisfied, skipping upgrade: numpy>=1.13.3 in /usr/local/lib/python3.5/site-packages (from pandas>=0.17.1; extra == "pandas"->google-cloud-bigquery[pandas]) (1.15.1)
+Requirement already satisfied, skipping upgrade: idna<2.9,>=2.5 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0dev,>=1.15.0->google-cloud-bigquery[pandas]) (2.8)
+Requirement already satisfied, skipping upgrade: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0dev,>=1.15.0->google-cloud-bigquery[pandas]) (1.24.2)
+Requirement already satisfied, skipping upgrade: certifi>=2017.4.17 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0dev,>=1.15.0->google-cloud-bigquery[pandas]) (2019.11.28)
+Requirement already satisfied, skipping upgrade: chardet<3.1.0,>=3.0.2 in /usr/local/lib/python3.5/dist-packages (from requests<3.0.0dev,>=2.18.0->google-api-core<2.0dev,>=1.15.0->google-cloud-bigquery[pandas]) (3.0.4)
+Requirement already satisfied, skipping upgrade: pyasn1>=0.1.3 in /usr/local/lib/python3.5/dist-packages (from rsa<4.1,>=3.1.4->google-auth<2.0dev,>=1.9.0->google-cloud-bigquery[pandas]) (0.4.8)
+Requirement already satisfied, skipping upgrade: mkl-fft in /usr/local/lib/python3.5/dist-packages (from numpy>=1.13.3->pandas>=0.17.1; extra == "pandas"->google-cloud-bigquery[pandas]) (1.0.6)
+Requirement already satisfied, skipping upgrade: tbb4py in /usr/local/lib/python3.5/dist-packages (from numpy>=1.13.3->pandas>=0.17.1; extra == "pandas"->google-cloud-bigquery[pandas]) (2019.0)
+Requirement already satisfied, skipping upgrade: mkl-random in /usr/local/lib/python3.5/dist-packages (from numpy>=1.13.3->pandas>=0.17.1; extra == "pandas"->google-cloud-bigquery[pandas]) (1.0.1.1)
+Requirement already satisfied, skipping upgrade: mkl in /usr/local/lib/python3.5/dist-packages (from numpy>=1.13.3->pandas>=0.17.1; extra == "pandas"->google-cloud-bigquery[pandas]) (2019.0)
+Requirement already satisfied, skipping upgrade: icc-rt in /usr/local/lib/python3.5/dist-packages (from numpy>=1.13.3->pandas>=0.17.1; extra == "pandas"->google-cloud-bigquery[pandas]) (2020.0.133)
+Requirement already satisfied, skipping upgrade: intel-numpy in /usr/local/lib/python3.5/dist-packages (from mkl-fft->numpy>=1.13.3->pandas>=0.17.1; extra == "pandas"->google-cloud-bigquery[pandas]) (1.15.1)
+Requirement already satisfied, skipping upgrade: tbb==2019.* in /usr/local/lib/python3.5/dist-packages (from tbb4py->numpy>=1.13.3->pandas>=0.17.1; extra == "pandas"->google-cloud-bigquery[pandas]) (2019.0)
+Requirement already satisfied, skipping upgrade: intel-openmp in /usr/local/lib/python3.5/dist-packages (from mkl->numpy>=1.13.3->pandas>=0.17.1; extra == "pandas"->google-cloud-bigquery[pandas]) (2020.0.133)
+Installing collected packages: google-cloud-bigquery
+Successfully installed google-cloud-bigquery-1.24.0
+jupyter@intel-20200220-090909:~$ 

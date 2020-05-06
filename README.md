@@ -1,4 +1,4 @@
-# Route Recommendation to reduce Accidents using Predictive Analysis
+# Route Recommendation and Severity Prediction to reduce Accidents using Predictive Analysis
 
 ## Team Members:
 - Aditya Kamble (akamble@uncc.edu)

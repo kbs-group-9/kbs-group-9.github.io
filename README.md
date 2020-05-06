@@ -1,4 +1,4 @@
-# Route Recommendation and Severity Prediction to reduce Accidents using Predictive Analysis
+# Route Recommendation/Severity Prediction to reduce Accidents using Predictive Analysis
 
 ## Team Members:
 - Aditya Kamble (akamble@uncc.edu)
@@ -11,6 +11,7 @@
   - How does Weather condition and time affect visibility which results in the number of accidents?
   - Do accidents happen due to stop signs w.r.t time of the day?
   - Is the accident rates in different states higher due to different Weather Condition?
+  - What factors contributes to Severity of an Accident?
 
 ### Audience 
   - Regular vehicle users
@@ -46,9 +47,10 @@ Specific questions like the Total number of accidents per city or state can be c
 (note:  analysis must use Hadoop, Big Query, PySpark, as many tools as possible from class)
 
   - Data Ingesion completed - Used SQL instance to extract data to Data Studio for creation of dashboard
-  - Using BigQuery to fetch data into AI Notebook for EDA
+  - Using BigQuery to fetch data into AI Notebook for EDA [Link](https://nbviewer.jupyter.org/github/kbs-group-9/kbs-group-9.github.io/blob/master/notebooks/US%20Accidents%20-%20EDA.ipynb#Import-Dependencies)
   - We will be building ML Models to predict Accident Severity based on weather, wind, time, etc
-  - ML models to classify the accidents based on certain parameters using PySpark and ML-Lib
+  - ML models to classify the accidents based on certain parameters using PySpark and ML-Lib [Link](https://github.com/kbs-group-9/kbs-group-9.github.io/blob/master/notebooks/US%20Accidents%20-%20Severity%20Prediction.ipynb)
+  
 
 ### Research citations:
   - https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/811059
